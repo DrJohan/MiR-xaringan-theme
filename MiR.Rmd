@@ -18,13 +18,12 @@ output:
       highlightLanguage: ["r", "css", "yaml"]
       countIncrementalSlides: false
       ratio: "16:9"
-    includes:
-      after_body: [css/insert-logo.html]
 ---
-
 class: title-slide, center, middle
 
 ```{r setup, include=FALSE}
+library(xaringanExtra)
+
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.retina = 3, echo=FALSE)
 ```
@@ -32,6 +31,15 @@ knitr::opts_chunk$set(fig.retina = 3, echo=FALSE)
 ```{r, echo=FALSE, out.width=200}
 knitr::include_graphics("img/mir_logo.png")
 ```
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+  image_url = "https://mircommunity.com/images/mir_logo.png",
+  width = "80px",
+  exclude_class = c("title-slide", "inverse", "hide_logo"))
+```
+
+
 
 # `r rmarkdown::metadata$title`
 ----
