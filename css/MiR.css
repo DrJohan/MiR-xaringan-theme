@@ -1,11 +1,19 @@
 a, a > code {
-  color: #387A65;
+  color: #00564E;
   text-decoration: none;
-  border-bottom: 2px solid #387A65;
+  border-bottom: 3px solid #007C64;
+}
+
+a:hover {
+  border-bottom: 0px;
 }
 
 h1, h2, h3 {
-  color: #25554E;
+  color: #00564E;
+}
+
+.remark-slide-content {
+  font-size: 1.3em;
 }
 
 .footnote {
@@ -16,8 +24,17 @@ h1, h2, h3 {
 }
 .remark-code-line-highlighted     { background-color: #ffff88; }
 
+.remark-code, .remark-inline-code {
+  font-size:          90%;
+  font-weight:        400;
+  color:              #231F20;
+  background:         rgba(0, 124, 100, 0.1);
+  border-radius:      0px;
+  padding:            1px 1px 1px 1px;
+}
+
 .inverse {
-  background-color: #25554E;
+  background-color: #00564E;
   color: #d6d6d6;
   text-shadow: 0 0 20px #333;
 }
